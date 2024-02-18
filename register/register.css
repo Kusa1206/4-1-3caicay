@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url("../images/cherry.jpg");
+    background-position: center;
+    /* background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply; : khiến màu nền tối hơn bằng cách trộn màu đen và nền*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: pink;
+    padding: 20px 30px;
+    border-radius: 30px;
+    width: 500px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.field{
+    margin-top: 13px;
+}
+
+label{
+    display: block;
+}
+
+input{
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 5px;
+    border: 2px solid palevioletred;
+    border-radius: 10px;
+    outline: none;
+}
+
+#login-btn{
+    margin-top: 13px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: palevioletred;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+#login-btn:hover {
+    background-color: skyblue;
+    /* opacity: khi rê chuột vào màu nhạt đi */
+}
+.error{
+    color: crimson;
+    font-size: 13px;
+    margin-top: 5px;
+}

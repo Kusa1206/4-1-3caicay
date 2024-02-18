@@ -1,0 +1,22 @@
+.my-slider{
+    height: 500px;
+}
+.slider-img{
+object-fit: cover;
+}
+
+.footer{
+    background-color: #FFBFBF;
+    height: 300px;
+}
+.shop-info{
+    display: flex;
+justify-content: center;
+padding: 40px 140px;
+}
+.info{
+    width: 30%;
+}
+.info-header{
+    font-weight: bold;
+}
