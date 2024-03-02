@@ -1,6 +1,7 @@
 import products from "../data/products.js";
 import formatCurrency from "../utils/formatCurrency.js";
 import displayOnNavbar from "../helper/displayOnNavbar.js";
+console.log(displayOnNavbar);
 displayOnNavbar();
 
 // xử lý đăng xuất
@@ -41,6 +42,11 @@ function renderProducts(products) {
     const addToCartBtn = document.createElement("button");
     addToCartBtn.innerHTML = "thêm vào giỏ hàng";
     addToCartBtn.classList.add("btn", "btn-primary", "w-100", "mt-3");
+
+    addToCartBtn.onclick = function () {
+      // gọi hàng xử lý thêm vào giỏ hàng
+      addToCart(product);
+    };
     // tạo thẻ div bọc các giá bán
     const productPrices = document.createElement("div");
     productPrices.classList.add("product-prices");
@@ -91,3 +97,6 @@ navbarSearchForm.onsubmit = function (event) {
   const text = navbarSearchInput.value;
   searchProducts(text);
 };
+
+// xử lý thêm sp vào giỏ hàng
+function addToCart(product) {}

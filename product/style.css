@@ -1,9 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .product {
     /* width: calc(25% - 20px); */
-    background-color: lightgrey;
+    background-color: white;
     margin: 10px;
     border-radius: 8px;
     padding: 20px;
+    border: 1px solid lightgray;
   }
   
   .product-img {

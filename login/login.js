@@ -29,15 +29,20 @@ loginForm.onsubmit = function (event) {
   } else {
     passwordError.innerHTML = "";
   }
+  const userList = JSON.parse(localStorage.getItem("userList")) || [];
   const existingUser = userList.find(function (user) {
-    return user.username;
+    return user.username === username.value;
   });
 
-  if (existingUser) {
+  if (!existingUser) {
     loginError.innerHTML = "Sai tên đăng nhập hoặc mật khẩu";
   } else {
     loginError.innerHTML = "";
+    const newUser = {
+      username: existingUser.username,
+      password: existingUser.password,
+    };
+    localStorage.setItem("user", JSON.stringify(newUser));
     window.location.href = "../index.html";
   }
 };
-console.log(loginForm);
